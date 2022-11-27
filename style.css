@@ -1,0 +1,42 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background: linear-gradient(to right, rgb(71, 71, 129), rgb(68, 48, 100));
+}
+
+svg {
+    width: 200px;
+    height: 200px;
+    stroke: none;
+}
+
+svg:hover > * {
+    stroke: rgba(43, 43, 43, 0.8) !important;
+}
+
+div.svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 24px;
+    color: rgb(43, 43, 43);
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    cursor: crosshair;
+}
+
+p:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(43, 43, 43);
+    transition: all 250ms ease;
+}
